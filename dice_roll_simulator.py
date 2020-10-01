@@ -8,12 +8,12 @@ def roll(event = 0):
     label1.pack()
 
 win = Tk()
-win.geometry("700x450")
+win.geometry("750x500")
 
-label1 = Label(win, font=("times",200))
+label1 = Label(win, font=("times",250))
 
 button = Button(win, text = "Click to roll the dice", command= roll)
 button.pack()
-label2= Label(win, text="Or press the enter key", font=("times",20)).pack()
+label2= Label(win, text="Or press the enter key", font=("times",30)).pack()
 win.bind('<Return>',roll)
 win.mainloop()
